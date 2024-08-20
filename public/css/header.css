@@ -8,6 +8,11 @@ body {
     padding: 0px;
 }
 
+input {
+    outline: none;
+    outline-offset: 0;
+}
+
 button {
     margin: 0px;
     padding: 0px;
@@ -24,19 +29,37 @@ header {
     align-items: center;
     padding: 0px 16px;
     background-color: #0f0f0f;
+    padding: 0px 16px 0px 16px;
+}
+
+.header-account-profile {
+    overflow: visible;
+    /* or overflow: hidden; with a larger width */
+}
+
+.header-account-profile-btn {
+    width: 100%;
+    /* or a fixed width, e.g. 40px */
+}
+
+.header-account-profile-img {
+    width: 100%;
+    /* or a fixed width, e.g. 40px */
+    height: auto;
+    border-radius: 50%;
+    /* optional, to make the avatar rounded */
 }
 
 .header-btn {
     width: 40px;
     height: 40px;
-
     border-radius: 50%;
     background-color: transparent;
     border: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    cursor: pointer;
 }
 
 .header-btn:hover {
@@ -105,9 +128,70 @@ header {
     align-items: center;
 }
 
+.header-input-wrapper {
+    width: 536px;
+    height: 40px;
+
+}
+
+.header-input-open {
+    width: 534px;
+    height: 38px;
+    border-radius: 40px 0px 0px 40px;
+    border: 1px solid;
+    border-color: hsl(0, 0%, 18.82%);
+    display: flex;
+    align-items: center;
+}
+
+.header-input-field {
+    background: transparent;
+    border: none;
+    width: 515px;
+    height: 26px;
+    font-size: 16px;
+    color: #f1f1f1;
+    font-weight: 500;
+}
+
+.header-search-btn {
+    padding: 1px 6px;
+    background-color: #ffffff14;
+    border: 1px solid;
+    border-color: hsl(0, 0%, 18.82%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 40px;
+    border-radius: 0px 40px 40px 0px;
+    cursor: pointer;
+}
+
+.header-input-voice {
+    margin-left: 12px;
+}
+
+.header-input-voice-btn {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+
+
+
 
 
 .header-content-right {
     display: flex;
     align-items: center;
 }
+
+/* .header-account-style {
+    margin-right: 8px;
+}
+
+.header-account-profile {
+    width: 32px;
+    height: 32px;
+} */
