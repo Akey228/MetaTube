@@ -1,4 +1,113 @@
+@import "style.css";
+
+
 body {
     background-color: #0f0f0f;
     color: #f1f1f1;
+    margin: 0px;
+    padding: 0px;
+}
+
+button {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 16px;
+    background-color: #0f0f0f;
+}
+
+.header-btn {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.header-btn:hover {
+    background-color: #333;
+}
+
+.header-svg {
+    width: 24px;
+    height: 24px;
+    fill: #f1f1f1;
+    color: #f1f1f1;
+}
+
+.header-content-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+.header-logo-text span {
+    font-family: 'YouTube Sans';
+    font-weight: 900;
+    font-style: normal;
+    font-size: 25px;
+}
+
+.header-logo-text {
+    position: relative;
+
+}
+
+.header-logo-text-container {
+    padding: 18px 14px 18px 16px;
+}
+
+.header-logo-text sup {
+    position: absolute;
+    margin-top: -2px;
+    margin-right: -17px;
+    top: 0;
+    right: 0;
+    font-size: 10px;
+    color: #aaaaaa;
+}
+
+.header-logo-img-img {
+    width: 32px;
+    height: 22px;
+}
+
+
+
+.header-content-middle {
+    display: flex;
+    align-items: center;
+}
+
+.header-input-search {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.header-content-right {
+    display: flex;
+    align-items: center;
 }
