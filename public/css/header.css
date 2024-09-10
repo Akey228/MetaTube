@@ -23,7 +23,19 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 16px;
+    background-color: #0f0f0f;
+}
+
+.header-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -160,6 +172,25 @@ header {
     padding: 1px 0px;
 }
 
+.header-input-field input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 40px;
+    width: 40px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M6 18L18 6M6 6l12 12"/></svg>');
+    background-size: 25px 25px;
+    font-weight: 100;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  .header-input-field input[type="search"]::-webkit-search-cancel-button:hover {
+    background-color: rgba(255,255,255,0.1); /* Серый цвет */
+    border-radius: 50%; /* Круглый фон */
+    width: 40px;
+    height: 40px;
+  }
+  
+
 .header-search-btn {
     padding: 1px 6px;
     background-color: #ffffff14;
@@ -219,3 +250,5 @@ header {
 .header-account-profile-img {
     width: 100%;
 }
+
+aside {}

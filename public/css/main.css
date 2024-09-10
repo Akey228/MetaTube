@@ -1,0 +1,67 @@
+@import 'style.css';
+
+
+
+main {
+}
+.recomendation-theme {
+    margin-left: 16px;
+}
+.recomendation-theme-ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: start;
+
+}
+.theme {
+
+    width: auto;
+    margin: 0;
+    padding: 0px 12px;
+    margin: 12px 12px 12px 0px;
+    background-color: rgba(255, 255, 255, 0.1);
+    list-style-type: none;
+    transition: 500m cubic-bezier(.05,0,0,1);
+    min-width: 12px;
+    padding: 0 10px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    outline: none;
+    overflow: hidden;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    font-family: "Roboto", "Arial", sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    display: inline-flex;
+    height: 32px;
+    color: var(--text-primary-color);
+    transition: 500ms;
+} 
+.theme.active {
+    background-color: var(--text-primary-color);
+    color: #0F0F0F;
+}
+.theme:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.theme.active:hover {
+    background-color: var(--text-primary-color)
+}
+
+.theme span {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 2rem;
+    font-weight: 600;
+    max-width: 20rem;
+    width: 100%;
+}
+
+.theme-first {
+
+}
