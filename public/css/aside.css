@@ -1,2 +1,18 @@
 aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+}
+.material-symbols-outlined {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+}
+.aside-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
