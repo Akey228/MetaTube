@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="public/css/style.css">
   <link rel="stylesheet" href="public/css/aside.css">
   <link rel="stylesheet" href="public/css/main.css">
+  <link rel="stylesheet" href="public/css/output.css">
   <title>MetaTube</title>
   <link rel="shortcut icon" href="public/img/logo-app.png">
 
@@ -15,6 +16,12 @@
 
 
   <!-- Шрифты -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -104,7 +111,7 @@
           <div class="header-account-create header-account-style">
             <button class="header-account-create-btn header-btn">
               <div class="header-svg">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24" 
+                <svg xmlns="http://www.w3.org/2000/svg" height="24"
                   style="pointer-events: none; display: inherit; width: 100%; height: 100%;" viewBox="0 0 24 24"
                   width="24" focusable="false" aria-hidden="true">
                   <path
@@ -115,13 +122,17 @@
             </button>
           </div>
 
-          
+
 
           <div class="header-account-notifications header-account-style">
             <button class="header-account-notifications-btn header-btn" onclick="notificationSvgFill()">
               <div class="header-svg">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
-                  <path clip-rule="evenodd" d="m13.497 4.898.053.8.694.4C15.596 6.878 16.5 8.334 16.5 10v2.892c0 .997.27 1.975.784 2.83L18.35 17.5H5.649l1.067-1.778c.513-.855.784-1.833.784-2.83V10c0-1.666.904-3.122 2.256-3.902l.694-.4.053-.8c.052-.78.703-1.398 1.497-1.398.794 0 1.445.618 1.497 1.398ZM6 10c0-2.224 1.21-4.165 3.007-5.201C9.11 3.236 10.41 2 12 2c1.59 0 2.89 1.236 2.993 2.799C16.79 5.835 18 7.776 18 10v2.892c0 .725.197 1.436.57 2.058l1.521 2.535c.4.667-.08 1.515-.857 1.515H15c0 .796-.316 1.559-.879 2.121-.562.563-1.325.879-2.121.879s-1.559-.316-2.121-.879C9.316 20.56 9 19.796 9 19H4.766c-.777 0-1.257-.848-.857-1.515L5.43 14.95c.373-.622.57-1.333.57-2.058V10Zm4.5 9c0 .398.158.78.44 1.06.28.282.662.44 1.06.44s.78-.158 1.06-.44c.282-.28.44-.662.44-1.06h-3Z" fill-rule="evenodd"></path>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="24" viewBox="0 0 24 24" width="24"
+                  focusable="false" aria-hidden="true"
+                  style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+                  <path clip-rule="evenodd"
+                    d="m13.497 4.898.053.8.694.4C15.596 6.878 16.5 8.334 16.5 10v2.892c0 .997.27 1.975.784 2.83L18.35 17.5H5.649l1.067-1.778c.513-.855.784-1.833.784-2.83V10c0-1.666.904-3.122 2.256-3.902l.694-.4.053-.8c.052-.78.703-1.398 1.497-1.398.794 0 1.445.618 1.497 1.398ZM6 10c0-2.224 1.21-4.165 3.007-5.201C9.11 3.236 10.41 2 12 2c1.59 0 2.89 1.236 2.993 2.799C16.79 5.835 18 7.776 18 10v2.892c0 .725.197 1.436.57 2.058l1.521 2.535c.4.667-.08 1.515-.857 1.515H15c0 .796-.316 1.559-.879 2.121-.562.563-1.325.879-2.121.879s-1.559-.316-2.121-.879C9.316 20.56 9 19.796 9 19H4.766c-.777 0-1.257-.848-.857-1.515L5.43 14.95c.373-.622.57-1.333.57-2.058V10Zm4.5 9c0 .398.158.78.44 1.06.28.282.662.44 1.06.44s.78-.158 1.06-.44c.282-.28.44-.662.44-1.06h-3Z"
+                    fill-rule="evenodd"></path>
                 </svg>
               </div>
             </button>
@@ -139,150 +150,1567 @@
 
   <section class="base-content">
 
-  <aside id="aside">
+    <aside id="aside">
 
-    <div id="home-icon" class="aside-icon">
-      <span class="material-symbols-outlined ">
-        <svg xmlns="http://www.w3.org/2000/svg" title="Home" fill="currentColor" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path clip-rule="evenodd" d="M22.146 11.146a.5.5 0 01-.353.854H20v7.5a1.5 1.5 0 01-1.5 1.5H14v-8h-4v8H5.5A1.5 1.5 0 014 19.5V12H2.207a.5.5 0 01-.353-.854L12 1l10.146 10.146Z" fill-rule="evenodd"></path></svg>
-      </span>
-      <p id="gl">Home</p>
-    </div>  
+      <div class="aside-small">
 
-    <div id="subscriptions-icon" class="aside-icon">
-      <span class="material-symbols-outlined">subscriptions
-        <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,100,0,0" />
-      </span>
-      <p id="sub">Subscriptions</p>
-    </div>
-
-    <div id="you-icon" class="aside-icon">
-      <span class="material-symbols-outlined">
-        left_panel_open
-        <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,100,0,0" />
-      </span>
-      <p id="you">You</p>
-    </div>
-
-  </aside>
-
-
-
-  <main>
-    <div class="recomendation-theme">
-
-      <ul class="recomendation-theme-ul">
-        <li class="theme active" onclick="chooseTheme(this)">
-          <span >All</span>
-        </li>
-
-        <li class="theme" onclick="chooseTheme(this)">
-          <span>Java</span>
-        </li>
-
-        <li class="theme" onclick="chooseTheme(this)"> 
-          <span>Frontend</span>
-        </li>
-
-        <li class="theme" onclick="chooseTheme(this)">
-          <span>Backend</span>
-        </li>
-
-        <li class="theme" onclick="chooseTheme(this)">
-          <span>C#</span>
-        </li>
-
-        <li class="theme" onclick="chooseTheme(this)">
-          <span>JavaScript</span>
-        </li>
-
-        <li class="theme" onclick="chooseTheme(this)">
-          <span>Vs Code</span>
-        </li>
-
-        <li class="theme" onclick="chooseTheme(this)">
-          <span>PyCharm</span>
-        </li>
-
-        <li class="theme" onclick="chooseTheme(this)">
-          <span>Programming</span>
-        </li>
-
-        <li class="theme" onclick="chooseTheme(this)">
-          <span>Java</span>
-        </li>
-
-        <li class="theme" onclick="chooseTheme(this)">
-          <span>Frontend</span>
-        </li>
-
-        <li class="theme" onclick="chooseTheme(this)">
-          <span>Backend</span>
-        </li>
-
-        <li class="theme" onclick="chooseTheme(this)">
-          <span>C#</span>
-        </li>
-
-        <li class="theme" onclick="chooseTheme(this)">
-          <span>JavaScript</span>
-        </li>
-
-        <li class="theme" onclick="chooseTheme(this)">
-          <span>Vs Code</span>
-        </li>
-
-        <li class="theme" onclick="chooseTheme(this)">
-          <span>PyCharm</span>
-        </li>
-
-        <li class="theme" onclick="chooseTheme(this)">
-          <span>Programming</span>
-        </li>
-
-        <li class="theme" onclick="chooseTheme(this)">
-          <span>Frontend</span>
-        </li>
-
-      </ul> 
-    </div>
-    <div class="recomendation-video">
-      <div class="recomendation-video-container">
-        <a href="">
-        <div class="video-container">
-          <div class="video-img-preview">
-            <img src="public/img/hq720.webp" alt="">
-            <div class="video-time-length">
-              <!-- video time soon... -->
-            </div>
+        <div class="aside-container" tabindex="0">
+          <div style="width: 24px; height: 24px; display: block; fill: currentcolor;"><svg
+              xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24"
+              width="24" focusable="false" aria-hidden="true"
+              style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+              <g>
+                <path d="M4 21V10.08l8-6.96 8 6.96V21h-6v-6h-4v6H4z"></path>
+              </g>
+            </svg>
           </div>
-          <div class="video-details">
-            <div class="video-details-logo">
-              <!-- video logo soon... -->
-            </div>
-            <div class="video-details-descriptions">
-              <h1>Изучение PYTHON за 1 ЧАС</h1>
-              <a href="" class="video-descriptions-channel-a">
-                <span>ХаудиХо</span><span></span> 
-              </a>
 
-            </div>
-          </div>
+          <span>Home</span>
         </div>
-      </a>
 
+        <div class="aside-container" tabindex="0">
+          <div style="width: 24px; height: 24px; display: block; fill: currentcolor;"><svg
+              xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false"
+              aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+              <path
+                d="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33-1.2-.5L18 9.06c1.84-.96 2.53-3.23 1.56-5.06s-3.24-2.53-5.07-1.56L6 6.94c-1.29.68-2.07 2.04-2 3.49.07 1.42.93 2.67 2.22 3.25.03.01 1.2.5 1.2.5L6 14.93c-1.83.97-2.53 3.24-1.56 5.07.97 1.83 3.24 2.53 5.07 1.56l8.5-4.5c1.29-.68 2.06-2.04 1.99-3.49-.07-1.42-.94-2.68-2.23-3.25zm-.23 5.86-8.5 4.5c-1.34.71-3.01.2-3.72-1.14-.71-1.34-.2-3.01 1.14-3.72l2.04-1.08v-1.21l-.69-.28-1.11-.46c-.99-.41-1.65-1.35-1.7-2.41-.05-1.06.52-2.06 1.46-2.56l8.5-4.5c1.34-.71 3.01-.2 3.72 1.14.71 1.34.2 3.01-1.14 3.72L15.5 9.26v1.21l1.8.74c.99.41 1.65 1.35 1.7 2.41.05 1.06-.52 2.06-1.46 2.56z">
+              </path>
+            </svg></div>
+
+          <span>Shorts</span>
+        </div>
+
+        <div class="aside-container" tabindex="0">
+          <div style="width: 24px; height: 24px; display: block; fill: currentcolor;"><svg
+              xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24"
+              width="24" focusable="false" aria-hidden="true"
+              style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+              <path d="M10 18v-6l5 3-5 3zm7-15H7v1h10V3zm3 3H4v1h16V6zm2 3H2v12h20V9zM3 10h18v10H3V10z"></path>
+            </svg>
+          </div>
+
+          <span>Subscriptions</span>
+        </div>
+
+        <div class="aside-container" tabindex="0">
+          <div class="aside-icon" style=" display: block; fill: currentcolor;"><svg xmlns="http://www.w3.org/2000/svg"
+              enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false"
+              aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+              <path d="m11 7 6 3.5-6 3.5V7zm7 13H4V6H3v15h15v-1zm3-2H6V3h15v15zM7 17h13V4H7v13z"></path>
+            </svg>
+          </div>
+
+          <span>You</span>
+        </div>
       </div>
-    </div>
-  </main>
+
+
+    </aside>
+
+
+
+    <main>
+      <div class="recomendation-theme">
+
+        <ul class="recomendation-theme-ul">
+          <li class="theme active" onclick="chooseTheme(this)">
+            <span>All</span>
+          </li>
+
+          <li class="theme" onclick="chooseTheme(this)">
+            <span>Java</span>
+          </li>
+
+          <li class="theme" onclick="chooseTheme(this)">
+            <span>Frontend</span>
+          </li>
+
+          <li class="theme" onclick="chooseTheme(this)">
+            <span>Backend</span>
+          </li>
+
+          <li class="theme" onclick="chooseTheme(this)">
+            <span>C#</span>
+          </li>
+
+          <li class="theme" onclick="chooseTheme(this)">
+            <span>JavaScript</span>
+          </li>
+
+          <li class="theme" onclick="chooseTheme(this)">
+            <span>Vs Code</span>
+          </li>
+
+          <li class="theme" onclick="chooseTheme(this)">
+            <span>PyCharm</span>
+          </li>
+
+          <li class="theme" onclick="chooseTheme(this)">
+            <span>Programming</span>
+          </li>
+
+          <li class="theme" onclick="chooseTheme(this)">
+            <span>Java</span>
+          </li>
+
+          <li class="theme" onclick="chooseTheme(this)">
+            <span>Frontend</span>
+          </li>
+
+          <li class="theme" onclick="chooseTheme(this)">
+            <span>Backend</span>
+          </li>
+
+          <li class="theme" onclick="chooseTheme(this)">
+            <span>C#</span>
+          </li>
+
+          <li class="theme" onclick="chooseTheme(this)">
+            <span>JavaScript</span>
+          </li>
+
+          <li class="theme" onclick="chooseTheme(this)">
+            <span>Vs Code</span>
+          </li>
+
+          <li class="theme" onclick="chooseTheme(this)">
+            <span>PyCharm</span>
+          </li>
+
+          <li class="theme" onclick="chooseTheme(this)">
+            <span>Programming</span>
+          </li>
+
+          <li class="theme" onclick="chooseTheme(this)">
+            <span>Frontend</span>
+          </li>
+
+        </ul>
+      </div>
+      <div class="recomendation-video">
+        <div class="recomendation-video-container">
+
+          <a href="">
+            <div class="video-container">
+              <div class="video-img-preview">
+                <img src="public/img/preview-test.jpg" alt="">
+                <div class="video-time-length">
+                  <!-- video time soon... -->
+                </div>
+              </div>
+              <div class="video-details">
+                <div class="video-details-logo">
+                  <div class="video-details-logo-img">
+                    <img src="public/img/profile-img.jpg" alt="">
+                  </div>
+                </div>
+                <div class="video-details-descriptions">
+                  <div class="video-descriptions-title">
+                    <span>Изучение PYTHON за 1 ЧАС</span>
+                  </div>
+                  <div class="video-descriptions-more">
+                    <a href="" class="video-descriptions-channel-a">
+                      <span>ХаудиХо</span><span></span>
+                    </a>
+                    <div class="video-descriptions-info">
+                      <div class="video-watch-container">
+                        <span> <span class="video-watch-num">12</span><span class="video-watch-title">K
+                            views </span></span>
+                      </div>
+                      <span></span>
+                      <div class="video-time-container">
+                        <span class="video-dol"> • </span><span class="video-time-num">2</span> <span
+                          class="video-time-title">weeks ago</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="video-container">
+              <div class="video-img-preview">
+                <img src="public/img/preview-test.jpg" alt="">
+                <div class="video-time-length">
+                  <!-- video time soon... -->
+                </div>
+              </div>
+              <div class="video-details">
+                <div class="video-details-logo">
+                  <div class="video-details-logo-img">
+                    <img src="public/img/profile-img.jpg" alt="">
+                  </div>
+                </div>
+                <div class="video-details-descriptions">
+                  <div class="video-descriptions-title">
+                    <span>Изучение PYTHON за 1 ЧАС</span>
+                  </div>
+                  <div class="video-descriptions-more">
+                    <a href="" class="video-descriptions-channel-a">
+                      <span>ХаудиХо</span><span></span>
+                    </a>
+                    <div class="video-descriptions-info">
+                      <div class="video-watch-container">
+                        <span> <span class="video-watch-num">12</span><span class="video-watch-title">K
+                            views </span></span>
+                      </div>
+                      <span></span>
+                      <div class="video-time-container">
+                        <span class="video-dol"> • </span><span class="video-time-num">2</span> <span
+                          class="video-time-title">weeks ago</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="video-container">
+              <div class="video-img-preview">
+                <img src="public/img/preview-test.jpg" alt="">
+                <div class="video-time-length">
+                  <!-- video time soon... -->
+                </div>
+              </div>
+              <div class="video-details">
+                <div class="video-details-logo">
+                  <div class="video-details-logo-img">
+                    <img src="public/img/profile-img.jpg" alt="">
+                  </div>
+                </div>
+                <div class="video-details-descriptions">
+                  <div class="video-descriptions-title">
+                    <span>Изучение PYTHON за 1 ЧАС</span>
+                  </div>
+                  <div class="video-descriptions-more">
+                    <a href="" class="video-descriptions-channel-a">
+                      <span>ХаудиХо</span><span></span>
+                    </a>
+                    <div class="video-descriptions-info">
+                      <div class="video-watch-container">
+                        <span> <span class="video-watch-num">12</span><span class="video-watch-title">K
+                            views </span></span>
+                      </div>
+                      <span></span>
+                      <div class="video-time-container">
+                        <span class="video-dol"> • </span><span class="video-time-num">2</span> <span
+                          class="video-time-title">weeks ago</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="video-container">
+              <div class="video-img-preview">
+                <img src="public/img/preview-test.jpg" alt="">
+                <div class="video-time-length">
+                  <!-- video time soon... -->
+                </div>
+              </div>
+              <div class="video-details">
+                <div class="video-details-logo">
+                  <div class="video-details-logo-img">
+                    <img src="public/img/profile-img.jpg" alt="">
+                  </div>
+                </div>
+                <div class="video-details-descriptions">
+                  <div class="video-descriptions-title">
+                    <span>Изучение PYTHON за 1 ЧАС</span>
+                  </div>
+                  <div class="video-descriptions-more">
+                    <a href="" class="video-descriptions-channel-a">
+                      <span>ХаудиХо</span><span></span>
+                    </a>
+                    <div class="video-descriptions-info">
+                      <div class="video-watch-container">
+                        <span> <span class="video-watch-num">12</span><span class="video-watch-title">K
+                            views </span></span>
+                      </div>
+                      <span></span>
+                      <div class="video-time-container">
+                        <span class="video-dol"> • </span><span class="video-time-num">2</span> <span
+                          class="video-time-title">weeks ago</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="video-container">
+              <div class="video-img-preview">
+                <img src="public/img/preview-test.jpg" alt="">
+                <div class="video-time-length">
+                  <!-- video time soon... -->
+                </div>
+              </div>
+              <div class="video-details">
+                <div class="video-details-logo">
+                  <div class="video-details-logo-img">
+                    <img src="public/img/profile-img.jpg" alt="">
+                  </div>
+                </div>
+                <div class="video-details-descriptions">
+                  <div class="video-descriptions-title">
+                    <span>Изучение PYTHON за 1 ЧАС</span>
+                  </div>
+                  <div class="video-descriptions-more">
+                    <a href="" class="video-descriptions-channel-a">
+                      <span>ХаудиХо</span><span></span>
+                    </a>
+                    <div class="video-descriptions-info">
+                      <div class="video-watch-container">
+                        <span> <span class="video-watch-num">12</span><span class="video-watch-title">K
+                            views </span></span>
+                      </div>
+                      <span></span>
+                      <div class="video-time-container">
+                        <span class="video-dol"> • </span><span class="video-time-num">2</span> <span
+                          class="video-time-title">weeks ago</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="video-container">
+              <div class="video-img-preview">
+                <img src="public/img/preview-test.jpg" alt="">
+                <div class="video-time-length">
+                  <!-- video time soon... -->
+                </div>
+              </div>
+              <div class="video-details">
+                <div class="video-details-logo">
+                  <div class="video-details-logo-img">
+                    <img src="public/img/profile-img.jpg" alt="">
+                  </div>
+                </div>
+                <div class="video-details-descriptions">
+                  <div class="video-descriptions-title">
+                    <span>Изучение PYTHON за 1 ЧАС</span>
+                  </div>
+                  <div class="video-descriptions-more">
+                    <a href="" class="video-descriptions-channel-a">
+                      <span>ХаудиХо</span><span></span>
+                    </a>
+                    <div class="video-descriptions-info">
+                      <div class="video-watch-container">
+                        <span> <span class="video-watch-num">12</span><span class="video-watch-title">K
+                            views </span></span>
+                      </div>
+                      <span></span>
+                      <div class="video-time-container">
+                        <span class="video-dol"> • </span><span class="video-time-num">2</span> <span
+                          class="video-time-title">weeks ago</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+
+          <a href="">
+            <div class="video-container">
+              <div class="video-img-preview">
+                <img src="public/img/preview-test.jpg" alt="">
+                <div class="video-time-length">
+                  <!-- video time soon... -->
+                </div>
+              </div>
+              <div class="video-details">
+                <div class="video-details-logo">
+                  <div class="video-details-logo-img">
+                    <img src="public/img/profile-img.jpg" alt="">
+                  </div>
+                </div>
+                <div class="video-details-descriptions">
+                  <div class="video-descriptions-title">
+                    <span>Изучение PYTHON за 1 ЧАС</span>
+                  </div>
+                  <div class="video-descriptions-more">
+                    <a href="" class="video-descriptions-channel-a">
+                      <span>ХаудиХо</span><span></span>
+                    </a>
+                    <div class="video-descriptions-info">
+                      <div class="video-watch-container">
+                        <span> <span class="video-watch-num">12</span><span class="video-watch-title">K
+                            views </span></span>
+                      </div>
+                      <span></span>
+                      <div class="video-time-container">
+                        <span class="video-dol"> • </span><span class="video-time-num">2</span> <span
+                          class="video-time-title">weeks ago</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="video-container">
+              <div class="video-img-preview">
+                <img src="public/img/preview-test.jpg" alt="">
+                <div class="video-time-length">
+                  <!-- video time soon... -->
+                </div>
+              </div>
+              <div class="video-details">
+                <div class="video-details-logo">
+                  <div class="video-details-logo-img">
+                    <img src="public/img/profile-img.jpg" alt="">
+                  </div>
+                </div>
+                <div class="video-details-descriptions">
+                  <div class="video-descriptions-title">
+                    <span>Изучение PYTHON за 1 ЧАС</span>
+                  </div>
+                  <div class="video-descriptions-more">
+                    <a href="" class="video-descriptions-channel-a">
+                      <span>ХаудиХо</span><span></span>
+                    </a>
+                    <div class="video-descriptions-info">
+                      <div class="video-watch-container">
+                        <span> <span class="video-watch-num">12</span><span class="video-watch-title">K
+                            views </span></span>
+                      </div>
+                      <span></span>
+                      <div class="video-time-container">
+                        <span class="video-dol"> • </span><span class="video-time-num">2</span> <span
+                          class="video-time-title">weeks ago</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="video-container">
+              <div class="video-img-preview">
+                <img src="public/img/preview-test.jpg" alt="">
+                <div class="video-time-length">
+                  <!-- video time soon... -->
+                </div>
+              </div>
+              <div class="video-details">
+                <div class="video-details-logo">
+                  <div class="video-details-logo-img">
+                    <img src="public/img/profile-img.jpg" alt="">
+                  </div>
+                </div>
+                <div class="video-details-descriptions">
+                  <div class="video-descriptions-title">
+                    <span>Изучение PYTHON за 1 ЧАС</span>
+                  </div>
+                  <div class="video-descriptions-more">
+                    <a href="" class="video-descriptions-channel-a">
+                      <span>ХаудиХо</span><span></span>
+                    </a>
+                    <div class="video-descriptions-info">
+                      <div class="video-watch-container">
+                        <span> <span class="video-watch-num">12</span><span class="video-watch-title">K
+                            views </span></span>
+                      </div>
+                      <span></span>
+                      <div class="video-time-container">
+                        <span class="video-dol"> • </span><span class="video-time-num">2</span> <span
+                          class="video-time-title">weeks ago</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="video-container">
+              <div class="video-img-preview">
+                <img src="public/img/preview-test.jpg" alt="">
+                <div class="video-time-length">
+                  <!-- video time soon... -->
+                </div>
+              </div>
+              <div class="video-details">
+                <div class="video-details-logo">
+                  <div class="video-details-logo-img">
+                    <img src="public/img/profile-img.jpg" alt="">
+                  </div>
+                </div>
+                <div class="video-details-descriptions">
+                  <div class="video-descriptions-title">
+                    <span>Изучение PYTHON за 1 ЧАС</span>
+                  </div>
+                  <div class="video-descriptions-more">
+                    <a href="" class="video-descriptions-channel-a">
+                      <span>ХаудиХо</span><span></span>
+                    </a>
+                    <div class="video-descriptions-info">
+                      <div class="video-watch-container">
+                        <span> <span class="video-watch-num">12</span><span class="video-watch-title">K
+                            views </span></span>
+                      </div>
+                      <span></span>
+                      <div class="video-time-container">
+                        <span class="video-dol"> • </span><span class="video-time-num">2</span> <span
+                          class="video-time-title">weeks ago</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="video-container">
+              <div class="video-img-preview">
+                <img src="public/img/preview-test.jpg" alt="">
+                <div class="video-time-length">
+                  <!-- video time soon... -->
+                </div>
+              </div>
+              <div class="video-details">
+                <div class="video-details-logo">
+                  <div class="video-details-logo-img">
+                    <img src="public/img/profile-img.jpg" alt="">
+                  </div>
+                </div>
+                <div class="video-details-descriptions">
+                  <div class="video-descriptions-title">
+                    <span>Изучение PYTHON за 1 ЧАС</span>
+                  </div>
+                  <div class="video-descriptions-more">
+                    <a href="" class="video-descriptions-channel-a">
+                      <span>ХаудиХо</span><span></span>
+                    </a>
+                    <div class="video-descriptions-info">
+                      <div class="video-watch-container">
+                        <span> <span class="video-watch-num">12</span><span class="video-watch-title">K
+                            views </span></span>
+                      </div>
+                      <span></span>
+                      <div class="video-time-container">
+                        <span class="video-dol"> • </span><span class="video-time-num">2</span> <span
+                          class="video-time-title">weeks ago</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+
+          <a href="">
+            <div class="video-container">
+              <div class="video-img-preview">
+                <img src="public/img/preview-test.jpg" alt="">
+                <div class="video-time-length">
+                  <!-- video time soon... -->
+                </div>
+              </div>
+              <div class="video-details">
+                <div class="video-details-logo">
+                  <div class="video-details-logo-img">
+                    <img src="public/img/profile-img.jpg" alt="">
+                  </div>
+                </div>
+                <div class="video-details-descriptions">
+                  <div class="video-descriptions-title">
+                    <span>Изучение PYTHON за 1 ЧАС</span>
+                  </div>
+                  <div class="video-descriptions-more">
+                    <a href="" class="video-descriptions-channel-a">
+                      <span>ХаудиХо</span><span></span>
+                    </a>
+                    <div class="video-descriptions-info">
+                      <div class="video-watch-container">
+                        <span> <span class="video-watch-num">12</span><span class="video-watch-title">K
+                            views </span></span>
+                      </div>
+                      <span></span>
+                      <div class="video-time-container">
+                        <span class="video-dol"> • </span><span class="video-time-num">2</span> <span
+                          class="video-time-title">weeks ago</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="video-container">
+              <div class="video-img-preview">
+                <img src="public/img/preview-test.jpg" alt="">
+                <div class="video-time-length">
+                  <!-- video time soon... -->
+                </div>
+              </div>
+              <div class="video-details">
+                <div class="video-details-logo">
+                  <div class="video-details-logo-img">
+                    <img src="public/img/profile-img.jpg" alt="">
+                  </div>
+                </div>
+                <div class="video-details-descriptions">
+                  <div class="video-descriptions-title">
+                    <span>Изучение PYTHON за 1 ЧАС</span>
+                  </div>
+                  <div class="video-descriptions-more">
+                    <a href="" class="video-descriptions-channel-a">
+                      <span>ХаудиХо</span><span></span>
+                    </a>
+                    <div class="video-descriptions-info">
+                      <div class="video-watch-container">
+                        <span> <span class="video-watch-num">12</span><span class="video-watch-title">K
+                            views </span></span>
+                      </div>
+                      <span></span>
+                      <div class="video-time-container">
+                        <span class="video-dol"> • </span><span class="video-time-num">2</span> <span
+                          class="video-time-title">weeks ago</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="video-container">
+              <div class="video-img-preview">
+                <img src="public/img/preview-test.jpg" alt="">
+                <div class="video-time-length">
+                  <!-- video time soon... -->
+                </div>
+              </div>
+              <div class="video-details">
+                <div class="video-details-logo">
+                  <div class="video-details-logo-img">
+                    <img src="public/img/profile-img.jpg" alt="">
+                  </div>
+                </div>
+                <div class="video-details-descriptions">
+                  <div class="video-descriptions-title">
+                    <span>Изучение PYTHON за 1 ЧАС</span>
+                  </div>
+                  <div class="video-descriptions-more">
+                    <a href="" class="video-descriptions-channel-a">
+                      <span>ХаудиХо</span><span></span>
+                    </a>
+                    <div class="video-descriptions-info">
+                      <div class="video-watch-container">
+                        <span> <span class="video-watch-num">12</span><span class="video-watch-title">K
+                            views </span></span>
+                      </div>
+                      <span></span>
+                      <div class="video-time-container">
+                        <span class="video-dol"> • </span><span class="video-time-num">2</span> <span
+                          class="video-time-title">weeks ago</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="video-container">
+              <div class="video-img-preview">
+                <img src="public/img/preview-test.jpg" alt="">
+                <div class="video-time-length">
+                  <!-- video time soon... -->
+                </div>
+              </div>
+              <div class="video-details">
+                <div class="video-details-logo">
+                  <div class="video-details-logo-img">
+                    <img src="public/img/profile-img.jpg" alt="">
+                  </div>
+                </div>
+                <div class="video-details-descriptions">
+                  <div class="video-descriptions-title">
+                    <span>Изучение PYTHON за 1 ЧАС</span>
+                  </div>
+                  <div class="video-descriptions-more">
+                    <a href="" class="video-descriptions-channel-a">
+                      <span>ХаудиХо</span><span></span>
+                    </a>
+                    <div class="video-descriptions-info">
+                      <div class="video-watch-container">
+                        <span> <span class="video-watch-num">12</span><span class="video-watch-title">K
+                            views </span></span>
+                      </div>
+                      <span></span>
+                      <div class="video-time-container">
+                        <span class="video-dol"> • </span><span class="video-time-num">2</span> <span
+                          class="video-time-title">weeks ago</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="video-container">
+              <div class="video-img-preview">
+                <img src="public/img/preview-test.jpg" alt="">
+                <div class="video-time-length">
+                  <!-- video time soon... -->
+                </div>
+              </div>
+              <div class="video-details">
+                <div class="video-details-logo">
+                  <div class="video-details-logo-img">
+                    <img src="public/img/profile-img.jpg" alt="">
+                  </div>
+                </div>
+                <div class="video-details-descriptions">
+                  <div class="video-descriptions-title">
+                    <span>Изучение PYTHON за 1 ЧАС</span>
+                  </div>
+                  <div class="video-descriptions-more">
+                    <a href="" class="video-descriptions-channel-a">
+                      <span>ХаудиХо</span><span></span>
+                    </a>
+                    <div class="video-descriptions-info">
+                      <div class="video-watch-container">
+                        <span> <span class="video-watch-num">12</span><span class="video-watch-title">K
+                            views </span></span>
+                      </div>
+                      <span></span>
+                      <div class="video-time-container">
+                        <span class="video-dol"> • </span><span class="video-time-num">2</span> <span
+                          class="video-time-title">weeks ago</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+
+          <a href="">
+            <div class="video-container">
+              <div class="video-img-preview">
+                <img src="public/img/preview-test.jpg" alt="">
+                <div class="video-time-length">
+                  <!-- video time soon... -->
+                </div>
+              </div>
+              <div class="video-details">
+                <div class="video-details-logo">
+                  <div class="video-details-logo-img">
+                    <img src="public/img/profile-img.jpg" alt="">
+                  </div>
+                </div>
+                <div class="video-details-descriptions">
+                  <div class="video-descriptions-title">
+                    <span>Изучение PYTHON за 1 ЧАС</span>
+                  </div>
+                  <div class="video-descriptions-more">
+                    <a href="" class="video-descriptions-channel-a">
+                      <span>ХаудиХо</span><span></span>
+                    </a>
+                    <div class="video-descriptions-info">
+                      <div class="video-watch-container">
+                        <span> <span class="video-watch-num">12</span><span class="video-watch-title">K
+                            views </span></span>
+                      </div>
+                      <span></span>
+                      <div class="video-time-container">
+                        <span class="video-dol"> • </span><span class="video-time-num">2</span> <span
+                          class="video-time-title">weeks ago</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="video-container">
+              <div class="video-img-preview">
+                <img src="public/img/preview-test.jpg" alt="">
+                <div class="video-time-length">
+                  <!-- video time soon... -->
+                </div>
+              </div>
+              <div class="video-details">
+                <div class="video-details-logo">
+                  <div class="video-details-logo-img">
+                    <img src="public/img/profile-img.jpg" alt="">
+                  </div>
+                </div>
+                <div class="video-details-descriptions">
+                  <div class="video-descriptions-title">
+                    <span>Изучение PYTHON за 1 ЧАС</span>
+                  </div>
+                  <div class="video-descriptions-more">
+                    <a href="" class="video-descriptions-channel-a">
+                      <span>ХаудиХо</span><span></span>
+                    </a>
+                    <div class="video-descriptions-info">
+                      <div class="video-watch-container">
+                        <span> <span class="video-watch-num">12</span><span class="video-watch-title">K
+                            views </span></span>
+                      </div>
+                      <span></span>
+                      <div class="video-time-container">
+                        <span class="video-dol"> • </span><span class="video-time-num">2</span> <span
+                          class="video-time-title">weeks ago</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="video-container">
+              <div class="video-img-preview">
+                <img src="public/img/preview-test.jpg" alt="">
+                <div class="video-time-length">
+                  <!-- video time soon... -->
+                </div>
+              </div>
+              <div class="video-details">
+                <div class="video-details-logo">
+                  <div class="video-details-logo-img">
+                    <img src="public/img/profile-img.jpg" alt="">
+                  </div>
+                </div>
+                <div class="video-details-descriptions">
+                  <div class="video-descriptions-title">
+                    <span>Изучение PYTHON за 1 ЧАС</span>
+                  </div>
+                  <div class="video-descriptions-more">
+                    <a href="" class="video-descriptions-channel-a">
+                      <span>ХаудиХо</span><span></span>
+                    </a>
+                    <div class="video-descriptions-info">
+                      <div class="video-watch-container">
+                        <span> <span class="video-watch-num">12</span><span class="video-watch-title">K
+                            views </span></span>
+                      </div>
+                      <span></span>
+                      <div class="video-time-container">
+                        <span class="video-dol"> • </span><span class="video-time-num">2</span> <span
+                          class="video-time-title">weeks ago</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="video-container">
+              <div class="video-img-preview">
+                <img src="public/img/preview-test.jpg" alt="">
+                <div class="video-time-length">
+                  <!-- video time soon... -->
+                </div>
+              </div>
+              <div class="video-details">
+                <div class="video-details-logo">
+                  <div class="video-details-logo-img">
+                    <img src="public/img/profile-img.jpg" alt="">
+                  </div>
+                </div>
+                <div class="video-details-descriptions">
+                  <div class="video-descriptions-title">
+                    <span>Изучение PYTHON за 1 ЧАС</span>
+                  </div>
+                  <div class="video-descriptions-more">
+                    <a href="" class="video-descriptions-channel-a">
+                      <span>ХаудиХо</span><span></span>
+                    </a>
+                    <div class="video-descriptions-info">
+                      <div class="video-watch-container">
+                        <span> <span class="video-watch-num">12</span><span class="video-watch-title">K
+                            views </span></span>
+                      </div>
+                      <span></span>
+                      <div class="video-time-container">
+                        <span class="video-dol"> • </span><span class="video-time-num">2</span> <span
+                          class="video-time-title">weeks ago</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="video-container">
+              <div class="video-img-preview">
+                <img src="public/img/preview-test.jpg" alt="">
+                <div class="video-time-length">
+                  <!-- video time soon... -->
+                </div>
+              </div>
+              <div class="video-details">
+                <div class="video-details-logo">
+                  <div class="video-details-logo-img">
+                    <img src="public/img/profile-img.jpg" alt="">
+                  </div>
+                </div>
+                <div class="video-details-descriptions">
+                  <div class="video-descriptions-title">
+                    <span>Изучение PYTHON за 1 ЧАС</span>
+                  </div>
+                  <div class="video-descriptions-more">
+                    <a href="" class="video-descriptions-channel-a">
+                      <span>ХаудиХо</span><span></span>
+                    </a>
+                    <div class="video-descriptions-info">
+                      <div class="video-watch-container">
+                        <span> <span class="video-watch-num">12</span><span class="video-watch-title">K
+                            views </span></span>
+                      </div>
+                      <span></span>
+                      <div class="video-time-container">
+                        <span class="video-dol"> • </span><span class="video-time-num">2</span> <span
+                          class="video-time-title">weeks ago</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+
+          <a href="">
+            <div class="video-container">
+              <div class="video-img-preview">
+                <img src="public/img/preview-test.jpg" alt="">
+                <div class="video-time-length">
+                  <!-- video time soon... -->
+                </div>
+              </div>
+              <div class="video-details">
+                <div class="video-details-logo">
+                  <div class="video-details-logo-img">
+                    <img src="public/img/profile-img.jpg" alt="">
+                  </div>
+                </div>
+                <div class="video-details-descriptions">
+                  <div class="video-descriptions-title">
+                    <span>Изучение PYTHON за 1 ЧАС</span>
+                  </div>
+                  <div class="video-descriptions-more">
+                    <a href="" class="video-descriptions-channel-a">
+                      <span>ХаудиХо</span><span></span>
+                    </a>
+                    <div class="video-descriptions-info">
+                      <div class="video-watch-container">
+                        <span> <span class="video-watch-num">12</span><span class="video-watch-title">K
+                            views </span></span>
+                      </div>
+                      <span></span>
+                      <div class="video-time-container">
+                        <span class="video-dol"> • </span><span class="video-time-num">2</span> <span
+                          class="video-time-title">weeks ago</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="video-container">
+              <div class="video-img-preview">
+                <img src="public/img/preview-test.jpg" alt="">
+                <div class="video-time-length">
+                  <!-- video time soon... -->
+                </div>
+              </div>
+              <div class="video-details">
+                <div class="video-details-logo">
+                  <div class="video-details-logo-img">
+                    <img src="public/img/profile-img.jpg" alt="">
+                  </div>
+                </div>
+                <div class="video-details-descriptions">
+                  <div class="video-descriptions-title">
+                    <span>Изучение PYTHON за 1 ЧАС</span>
+                  </div>
+                  <div class="video-descriptions-more">
+                    <a href="" class="video-descriptions-channel-a">
+                      <span>ХаудиХо</span><span></span>
+                    </a>
+                    <div class="video-descriptions-info">
+                      <div class="video-watch-container">
+                        <span> <span class="video-watch-num">12</span><span class="video-watch-title">K
+                            views </span></span>
+                      </div>
+                      <span></span>
+                      <div class="video-time-container">
+                        <span class="video-dol"> • </span><span class="video-time-num">2</span> <span
+                          class="video-time-title">weeks ago</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="video-container">
+              <div class="video-img-preview">
+                <img src="public/img/preview-test.jpg" alt="">
+                <div class="video-time-length">
+                  <!-- video time soon... -->
+                </div>
+              </div>
+              <div class="video-details">
+                <div class="video-details-logo">
+                  <div class="video-details-logo-img">
+                    <img src="public/img/profile-img.jpg" alt="">
+                  </div>
+                </div>
+                <div class="video-details-descriptions">
+                  <div class="video-descriptions-title">
+                    <span>Изучение PYTHON за 1 ЧАС</span>
+                  </div>
+                  <div class="video-descriptions-more">
+                    <a href="" class="video-descriptions-channel-a">
+                      <span>ХаудиХо</span><span></span>
+                    </a>
+                    <div class="video-descriptions-info">
+                      <div class="video-watch-container">
+                        <span> <span class="video-watch-num">12</span><span class="video-watch-title">K
+                            views </span></span>
+                      </div>
+                      <span></span>
+                      <div class="video-time-container">
+                        <span class="video-dol"> • </span><span class="video-time-num">2</span> <span
+                          class="video-time-title">weeks ago</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="video-container">
+              <div class="video-img-preview">
+                <img src="public/img/preview-test.jpg" alt="">
+                <div class="video-time-length">
+                  <!-- video time soon... -->
+                </div>
+              </div>
+              <div class="video-details">
+                <div class="video-details-logo">
+                  <div class="video-details-logo-img">
+                    <img src="public/img/profile-img.jpg" alt="">
+                  </div>
+                </div>
+                <div class="video-details-descriptions">
+                  <div class="video-descriptions-title">
+                    <span>Изучение PYTHON за 1 ЧАС</span>
+                  </div>
+                  <div class="video-descriptions-more">
+                    <a href="" class="video-descriptions-channel-a">
+                      <span>ХаудиХо</span><span></span>
+                    </a>
+                    <div class="video-descriptions-info">
+                      <div class="video-watch-container">
+                        <span> <span class="video-watch-num">12</span><span class="video-watch-title">K
+                            views </span></span>
+                      </div>
+                      <span></span>
+                      <div class="video-time-container">
+                        <span class="video-dol"> • </span><span class="video-time-num">2</span> <span
+                          class="video-time-title">weeks ago</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="video-container">
+              <div class="video-img-preview">
+                <img src="public/img/preview-test.jpg" alt="">
+                <div class="video-time-length">
+                  <!-- video time soon... -->
+                </div>
+              </div>
+              <div class="video-details">
+                <div class="video-details-logo">
+                  <div class="video-details-logo-img">
+                    <img src="public/img/profile-img.jpg" alt="">
+                  </div>
+                </div>
+                <div class="video-details-descriptions">
+                  <div class="video-descriptions-title">
+                    <span>Изучение PYTHON за 1 ЧАС</span>
+                  </div>
+                  <div class="video-descriptions-more">
+                    <a href="" class="video-descriptions-channel-a">
+                      <span>ХаудиХо</span><span></span>
+                    </a>
+                    <div class="video-descriptions-info">
+                      <div class="video-watch-container">
+                        <span> <span class="video-watch-num">12</span><span class="video-watch-title">K
+                            views </span></span>
+                      </div>
+                      <span></span>
+                      <div class="video-time-container">
+                        <span class="video-dol"> • </span><span class="video-time-num">2</span> <span
+                          class="video-time-title">weeks ago</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+
+          <a href="">
+            <div class="video-container">
+              <div class="video-img-preview">
+                <img src="public/img/preview-test.jpg" alt="">
+                <div class="video-time-length">
+                  <!-- video time soon... -->
+                </div>
+              </div>
+              <div class="video-details">
+                <div class="video-details-logo">
+                  <div class="video-details-logo-img">
+                    <img src="public/img/profile-img.jpg" alt="">
+                  </div>
+                </div>
+                <div class="video-details-descriptions">
+                  <div class="video-descriptions-title">
+                    <span>Изучение PYTHON за 1 ЧАС</span>
+                  </div>
+                  <div class="video-descriptions-more">
+                    <a href="" class="video-descriptions-channel-a">
+                      <span>ХаудиХо</span><span></span>
+                    </a>
+                    <div class="video-descriptions-info">
+                      <div class="video-watch-container">
+                        <span> <span class="video-watch-num">12</span><span class="video-watch-title">K
+                            views </span></span>
+                      </div>
+                      <span></span>
+                      <div class="video-time-container">
+                        <span class="video-dol"> • </span><span class="video-time-num">2</span> <span
+                          class="video-time-title">weeks ago</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="video-container">
+              <div class="video-img-preview">
+                <img src="public/img/preview-test.jpg" alt="">
+                <div class="video-time-length">
+                  <!-- video time soon... -->
+                </div>
+              </div>
+              <div class="video-details">
+                <div class="video-details-logo">
+                  <div class="video-details-logo-img">
+                    <img src="public/img/profile-img.jpg" alt="">
+                  </div>
+                </div>
+                <div class="video-details-descriptions">
+                  <div class="video-descriptions-title">
+                    <span>Изучение PYTHON за 1 ЧАС</span>
+                  </div>
+                  <div class="video-descriptions-more">
+                    <a href="" class="video-descriptions-channel-a">
+                      <span>ХаудиХо</span><span></span>
+                    </a>
+                    <div class="video-descriptions-info">
+                      <div class="video-watch-container">
+                        <span> <span class="video-watch-num">12</span><span class="video-watch-title">K
+                            views </span></span>
+                      </div>
+                      <span></span>
+                      <div class="video-time-container">
+                        <span class="video-dol"> • </span><span class="video-time-num">2</span> <span
+                          class="video-time-title">weeks ago</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="video-container">
+              <div class="video-img-preview">
+                <img src="public/img/preview-test.jpg" alt="">
+                <div class="video-time-length">
+                  <!-- video time soon... -->
+                </div>
+              </div>
+              <div class="video-details">
+                <div class="video-details-logo">
+                  <div class="video-details-logo-img">
+                    <img src="public/img/profile-img.jpg" alt="">
+                  </div>
+                </div>
+                <div class="video-details-descriptions">
+                  <div class="video-descriptions-title">
+                    <span>Изучение PYTHON за 1 ЧАС</span>
+                  </div>
+                  <div class="video-descriptions-more">
+                    <a href="" class="video-descriptions-channel-a">
+                      <span>ХаудиХо</span><span></span>
+                    </a>
+                    <div class="video-descriptions-info">
+                      <div class="video-watch-container">
+                        <span> <span class="video-watch-num">12</span><span class="video-watch-title">K
+                            views </span></span>
+                      </div>
+                      <span></span>
+                      <div class="video-time-container">
+                        <span class="video-dol"> • </span><span class="video-time-num">2</span> <span
+                          class="video-time-title">weeks ago</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="video-container">
+              <div class="video-img-preview">
+                <img src="public/img/preview-test.jpg" alt="">
+                <div class="video-time-length">
+                  <!-- video time soon... -->
+                </div>
+              </div>
+              <div class="video-details">
+                <div class="video-details-logo">
+                  <div class="video-details-logo-img">
+                    <img src="public/img/profile-img.jpg" alt="">
+                  </div>
+                </div>
+                <div class="video-details-descriptions">
+                  <div class="video-descriptions-title">
+                    <span>Изучение PYTHON за 1 ЧАС</span>
+                  </div>
+                  <div class="video-descriptions-more">
+                    <a href="" class="video-descriptions-channel-a">
+                      <span>ХаудиХо</span><span></span>
+                    </a>
+                    <div class="video-descriptions-info">
+                      <div class="video-watch-container">
+                        <span> <span class="video-watch-num">12</span><span class="video-watch-title">K
+                            views </span></span>
+                      </div>
+                      <span></span>
+                      <div class="video-time-container">
+                        <span class="video-dol"> • </span><span class="video-time-num">2</span> <span
+                          class="video-time-title">weeks ago</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="video-container">
+              <div class="video-img-preview">
+                <img src="public/img/preview-test.jpg" alt="">
+                <div class="video-time-length">
+                  <!-- video time soon... -->
+                </div>
+              </div>
+              <div class="video-details">
+                <div class="video-details-logo">
+                  <div class="video-details-logo-img">
+                    <img src="public/img/profile-img.jpg" alt="">
+                  </div>
+                </div>
+                <div class="video-details-descriptions">
+                  <div class="video-descriptions-title">
+                    <span>Изучение PYTHON за 1 ЧАС</span>
+                  </div>
+                  <div class="video-descriptions-more">
+                    <a href="" class="video-descriptions-channel-a">
+                      <span>ХаудиХо</span><span></span>
+                    </a>
+                    <div class="video-descriptions-info">
+                      <div class="video-watch-container">
+                        <span> <span class="video-watch-num">12</span><span class="video-watch-title">K
+                            views </span></span>
+                      </div>
+                      <span></span>
+                      <div class="video-time-container">
+                        <span class="video-dol"> • </span><span class="video-time-num">2</span> <span
+                          class="video-time-title">weeks ago</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+
+          <a href="">
+            <div class="video-container">
+              <div class="video-img-preview">
+                <img src="public/img/preview-test.jpg" alt="">
+                <div class="video-time-length">
+                  <!-- video time soon... -->
+                </div>
+              </div>
+              <div class="video-details">
+                <div class="video-details-logo">
+                  <div class="video-details-logo-img">
+                    <img src="public/img/profile-img.jpg" alt="">
+                  </div>
+                </div>
+                <div class="video-details-descriptions">
+                  <div class="video-descriptions-title">
+                    <span>Изучение PYTHON за 1 ЧАС</span>
+                  </div>
+                  <div class="video-descriptions-more">
+                    <a href="" class="video-descriptions-channel-a">
+                      <span>ХаудиХо</span><span></span>
+                    </a>
+                    <div class="video-descriptions-info">
+                      <div class="video-watch-container">
+                        <span> <span class="video-watch-num">12</span><span class="video-watch-title">K
+                            views </span></span>
+                      </div>
+                      <span></span>
+                      <div class="video-time-container">
+                        <span class="video-dol"> • </span><span class="video-time-num">2</span> <span
+                          class="video-time-title">weeks ago</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="video-container">
+              <div class="video-img-preview">
+                <img src="public/img/preview-test.jpg" alt="">
+                <div class="video-time-length">
+                  <!-- video time soon... -->
+                </div>
+              </div>
+              <div class="video-details">
+                <div class="video-details-logo">
+                  <div class="video-details-logo-img">
+                    <img src="public/img/profile-img.jpg" alt="">
+                  </div>
+                </div>
+                <div class="video-details-descriptions">
+                  <div class="video-descriptions-title">
+                    <span>Изучение PYTHON за 1 ЧАС</span>
+                  </div>
+                  <div class="video-descriptions-more">
+                    <a href="" class="video-descriptions-channel-a">
+                      <span>ХаудиХо</span><span></span>
+                    </a>
+                    <div class="video-descriptions-info">
+                      <div class="video-watch-container">
+                        <span> <span class="video-watch-num">12</span><span class="video-watch-title">K
+                            views </span></span>
+                      </div>
+                      <span></span>
+                      <div class="video-time-container">
+                        <span class="video-dol"> • </span><span class="video-time-num">2</span> <span
+                          class="video-time-title">weeks ago</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="video-container">
+              <div class="video-img-preview">
+                <img src="public/img/preview-test.jpg" alt="">
+                <div class="video-time-length">
+                  <!-- video time soon... -->
+                </div>
+              </div>
+              <div class="video-details">
+                <div class="video-details-logo">
+                  <div class="video-details-logo-img">
+                    <img src="public/img/profile-img.jpg" alt="">
+                  </div>
+                </div>
+                <div class="video-details-descriptions">
+                  <div class="video-descriptions-title">
+                    <span>Изучение PYTHON за 1 ЧАС</span>
+                  </div>
+                  <div class="video-descriptions-more">
+                    <a href="" class="video-descriptions-channel-a">
+                      <span>ХаудиХо</span><span></span>
+                    </a>
+                    <div class="video-descriptions-info">
+                      <div class="video-watch-container">
+                        <span> <span class="video-watch-num">12</span><span class="video-watch-title">K
+                            views </span></span>
+                      </div>
+                      <span></span>
+                      <div class="video-time-container">
+                        <span class="video-dol"> • </span><span class="video-time-num">2</span> <span
+                          class="video-time-title">weeks ago</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="video-container">
+              <div class="video-img-preview">
+                <img src="public/img/preview-test.jpg" alt="">
+                <div class="video-time-length">
+                  <!-- video time soon... -->
+                </div>
+              </div>
+              <div class="video-details">
+                <div class="video-details-logo">
+                  <div class="video-details-logo-img">
+                    <img src="public/img/profile-img.jpg" alt="">
+                  </div>
+                </div>
+                <div class="video-details-descriptions">
+                  <div class="video-descriptions-title">
+                    <span>Изучение PYTHON за 1 ЧАС</span>
+                  </div>
+                  <div class="video-descriptions-more">
+                    <a href="" class="video-descriptions-channel-a">
+                      <span>ХаудиХо</span><span></span>
+                    </a>
+                    <div class="video-descriptions-info">
+                      <div class="video-watch-container">
+                        <span> <span class="video-watch-num">12</span><span class="video-watch-title">K
+                            views </span></span>
+                      </div>
+                      <span></span>
+                      <div class="video-time-container">
+                        <span class="video-dol"> • </span><span class="video-time-num">2</span> <span
+                          class="video-time-title">weeks ago</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="video-container">
+              <div class="video-img-preview">
+                <img src="public/img/preview-test.jpg" alt="">
+                <div class="video-time-length">
+                  <!-- video time soon... -->
+                </div>
+              </div>
+              <div class="video-details">
+                <div class="video-details-logo">
+                  <div class="video-details-logo-img">
+                    <img src="public/img/profile-img.jpg" alt="">
+                  </div>
+                </div>
+                <div class="video-details-descriptions">
+                  <div class="video-descriptions-title">
+                    <span>Изучение PYTHON за 1 ЧАС</span>
+                  </div>
+                  <div class="video-descriptions-more">
+                    <a href="" class="video-descriptions-channel-a">
+                      <span>ХаудиХо</span><span></span>
+                    </a>
+                    <div class="video-descriptions-info">
+                      <div class="video-watch-container">
+                        <span> <span class="video-watch-num">12</span><span class="video-watch-title">K
+                            views </span></span>
+                      </div>
+                      <span></span>
+                      <div class="video-time-container">
+                        <span class="video-dol"> • </span><span class="video-time-num">2</span> <span
+                          class="video-time-title">weeks ago</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </main>
 
 
 
 
-</section>
+  </section>
 
-<script src="public/js/header.js"></script>
-<script src="public/js/recomendationTheeme.js"></script>
+  <script src="public/js/header.js"></script>
+  <script src="public/js/recomendationTheeme.js"></script>
 
 </body>
 
