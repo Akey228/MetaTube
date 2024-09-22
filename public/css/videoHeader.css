@@ -1,0 +1,274 @@
+@import "style.css";
+
+/* body {
+    background-color: #0F0F0F;
+    margin: 0;
+    padding: 0;
+    /* display: flex;
+    justify-content: center; 
+} 
+ */
+
+
+body {
+    background-color: #0f0f0f;
+    color: #f1f1f1;
+    margin: 0px;
+    padding: 0px;
+}
+
+input {
+    outline: none;
+    outline-offset: 0;
+}
+
+button {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 16px;
+    background-color: #0f0f0f;
+}
+
+.header-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 16px;
+    background-color: #0f0f0f;
+}
+
+.header-account-profile {
+    overflow: visible;
+    /* or overflow: hidden; with a larger width */
+}
+
+.header-account-profile-btn {
+    width: 100%;
+    /* or a fixed width, e.g. 40px */
+}
+
+.header-account-profile-img {
+    width: 100%;
+    /* or a fixed width, e.g. 40px */
+    height: auto;
+    border-radius: 50%;
+    /* optional, to make the avatar rounded */
+}
+
+.header-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.header-btn:hover {
+    background-color: #333;
+}
+
+.header-svg {
+    width: 24px;
+    height: 24px;
+    fill: #f1f1f1;
+    color: #f1f1f1;
+}
+
+.header-content-left {
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+.header-logo-text span {
+
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.header-logo-text {
+    position: relative;
+    margin: 0px 0px 1px 2px;
+}
+
+.header-logo-text-container {
+    padding: 18px 14px 18px 16px;
+}
+
+.header-logo-text sup {
+    position: absolute;
+    margin-top: -5px;
+    margin-right: -17px;
+    top: 0;
+    right: 0;
+    font-size: 10px;
+    color: #aaaaaa;
+}
+
+.header-logo-img-img {
+    width: 31px;
+    height: 21px;
+}
+
+
+
+.header-content-middle {
+    display: flex;
+    align-items: center;
+}
+
+.header-input-search {
+    display: flex;
+    align-items: center;
+}
+
+.header-input-wrapper {
+    width: 536px;
+    height: 40px;
+
+}
+
+.header-input-open {
+    width: 514px;
+    height: 38px;
+    border-radius: 40px 0px 0px 40px;
+    border: 1px solid;
+    border-color: hsl(0, 0%, 18.82%);
+    display: flex;
+    align-items: center;
+    padding: 0px 4px 0px 16px;
+    border-right: none;
+}
+
+.header-input-open.active {
+    border: "1px solid #1c62b9";
+}
+
+.header-input-field {
+    background: transparent;
+    border: none;
+    width: 515px;
+    height: 26px;
+    font-size: 16px;
+    color: #f1f1f1;
+    font-weight: 500;
+    padding: 1px 0px;
+}
+
+.header-svg-filled {
+    fill: currentColor;
+    clip-rule: evenodd;
+    fill-rule: evenodd;
+}
+
+.header-input-field input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 40px;
+    width: 40px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M6 18L18 6M6 6l12 12"/></svg>');
+    background-size: 25px 25px;
+    font-weight: 100;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.header-input-field input[type="search"]::-webkit-search-cancel-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Серый цвет */
+    border-radius: 50%;
+    /* Круглый фон */
+    width: 40px;
+    height: 40px;
+}
+
+
+.header-search-btn {
+    padding: 1px 6px;
+    background-color: #ffffff14;
+    border: 1px solid;
+    border-color: hsl(0, 0%, 18.82%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 40px;
+    border-radius: 0px 40px 40px 0px;
+    cursor: pointer;
+}
+
+.header-input-voice {
+    margin-left: 15px;
+}
+
+.header-input-voice-btn {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+
+
+
+
+
+.header-content-right {
+    display: flex;
+    align-items: center;
+    margin-right: 33px;
+}
+
+.header-content-app-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.header-account-style {
+    margin-right: 8px;
+}
+
+.header-account-profile {
+    padding: 1px 13px;
+}
+
+.header-account-profile-btn {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header-account-profile-img {
+    width: 100%;
+}
